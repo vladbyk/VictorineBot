@@ -1,0 +1,10 @@
+<h1>Victorina_Bot</h1>
+{% if latest_questions_list %}
+    <ul>
+    {% for question in latest_questions_list %}
+        <li><p>{{ question.question_text }}</p></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No questions are available.</p>
+{% endif %}
